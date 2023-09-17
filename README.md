@@ -17,9 +17,9 @@ This is my personal protfolio built with React
 
 ### Screenshot
 
-![Desktop](./design/output/desktop-1440px.jpg)
-![Mobile](./design/output/mobile-375px.jpg)
-![Desktop](./design/output/active-and-hover-effect.jpg)
+![Desktop](./src/assets/shot/desktop.png)
+![Mobile](./src/assets/shot/mobile.png)
+![Tablet](./src/assets/shot/tablet.png)
 
 ### Links
 
