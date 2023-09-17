@@ -57,12 +57,12 @@ const Contact = () => {
     <section className="contact" id="connect">
       <Container>
         <Row className="align-items-center">
-          <Col size={12} md={6} data-aos="fade-up-right">
+          <Col size={12} md={6} data-aos="fade-up">
             <img className="contact-img" src={contactImg} alt="Contact Us" />
           </Col>
           <Col size={12} md={6}>
             <h2>Get In Touch</h2>
-            <form ref={form} onSubmit={sendEmail} data-aos="fade-up-left">
+            <form ref={form} onSubmit={sendEmail} data-aos="fade-up">
               <Row>
                 <Col size={12} sm={6} className="px-1">
                   <input

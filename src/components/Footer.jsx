@@ -10,20 +10,20 @@ import "aos/dist/aos.css";
 
 const Footer = () => {
   useEffect(() => {
-    AOS.init({ duration: 500 });
+    AOS.init({ duration: 1500 });
   }, []);
   return (
     <footer className="footer">
       <Container>
         <Row className="align-items-center">
-          <Col size={12} md={6} data-aos="fade-right">
+          <Col size={12} md={6}>
             <img src={logo} alt="Logo" className="footer-logo" />
           </Col>
           <Col
             size={12}
             md={6}
             className="text-center text-sm-end"
-            data-aos="fade-left"
+            data-aos="fade-up"
           >
             <div className="social-icon">
               <a

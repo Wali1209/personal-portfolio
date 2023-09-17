@@ -53,15 +53,15 @@ const Projects = () => {
     },
   ];
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 1500 });
   }, []);
   return (
     <section className="project" id="projects">
       <Container>
         <Row>
           <Col size={12}>
-            <h2 data-aos="fade-right">Projects</h2>
-            <p data-aos="fade-left">
+            <h2 data-aos="fade-up">Projects</h2>
+            <p data-aos="fade-up">
               Dive into a collection of my works, including projects from
               Frontend Mentor challenges, where I've honed my skills in creative
               problem-solving. <br />
@@ -74,7 +74,7 @@ const Projects = () => {
                 variant="pills"
                 className="nav-pills mb-5 justify-content-center align-items-center"
                 id="pills-tab"
-                data-aos="zoom-in"
+                data-aos="fade-up"
               >
                 <Nav.Item>
                   <Nav.Link eventKey="first">Tab 1</Nav.Link>
@@ -90,7 +90,7 @@ const Projects = () => {
               <Tab.Content id="slideInUp">
                 <Tab.Pane
                   eventKey="first"
-                  data-aos="fade-right"
+                  data-aos="fade-up"
                   data-aos-duration="2000"
                 >
                   <Row>

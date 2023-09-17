@@ -23,12 +23,12 @@ html {
   }
 
   nav.navbar.scrolled {
-    padding: 0px 0;
+    padding: 0;
     background-color: #121212;
   }
 
   nav.navbar img.nav-logo{
-    width: 150px;
+    width: 10rem;
     filter: brightness(550%) saturate(300%);
     transition: filter 0.3s ease;
   }
@@ -39,8 +39,8 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
     font-weight: 400;
     color: #fff !important;
     letter-spacing: 0.8px;
-    padding: 0 25px;
-    font-size: 18px;
+    padding: 0 1.5rem;
+    font-size: 1.125rem;
     opacity: 0.75;
   }
 
@@ -55,7 +55,7 @@ span.navbar-text {
 }
 .social-icons {
     display: inline-block;
-    margin-left: 14px;
+    margin-left: 1rem;
 }
 .social-icons a {
     width: 42px;
@@ -277,8 +277,11 @@ nav.navbar .cross .navbar-toggler-icon {
     display: none;
   }
 }
+
+
 /************ Skills Css ************/
 .skill {
+  width: 100%;
   padding: 0 0 3rem 0;
   position: relative;
 }
@@ -646,4 +649,13 @@ transition: 0.3s ease-in-out;
 
 .social-icon a:hover img {
 filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+}
+
+
+@media screen and (max-width:420px) {
+  .banner , .skill , .project , .contact{
+    padding-left: 2rem;
+    padding-right: 1.5rem;
+
+  }
 }
