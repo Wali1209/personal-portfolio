@@ -11,8 +11,6 @@ const Contact = () => {
   const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
   const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
   const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-
-  console.log(typeof serviceId);
   const formInitialDetails = {
     firstName: "",
     lastName: "",
@@ -22,7 +20,6 @@ const Contact = () => {
   };
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState("Send");
-  const [status, setStatus] = useState(false);
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
@@ -39,11 +36,10 @@ const Contact = () => {
     emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
       (result) => {
         window.alert("Email Sent!");
-        console.log(result.text);
         setButtonText("Send");
       },
       (error) => {
-        console.log(error.text);
+        window.alert("Not able to send!");
         setButtonText("Send");
       }
     );

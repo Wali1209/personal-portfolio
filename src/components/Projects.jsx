@@ -6,7 +6,6 @@ import projImg3 from "../assets/img/NotificationPage.png";
 import projImg4 from "../assets/img/QRCode.png";
 import projImg5 from "../assets/img/RatingComponent.png";
 import projImg6 from "../assets/img/ResultSummary.png";
-import colorSharp2 from "../assets/img/color-sharp2.png";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -39,7 +38,7 @@ const Projects = () => {
       projectURL: "https://wali1209.github.io/qr-code-component-main/",
     },
     {
-      title: "Rating US",
+      title: "Rate US",
       description: "FrontEnd Mentor challenge",
       imgUrl: projImg5,
       projectURL:
@@ -55,6 +54,10 @@ const Projects = () => {
   useEffect(() => {
     AOS.init({ duration: 1500 });
   }, []);
+
+  const littleScroll = () => {
+    window.scrollTo({ top: window.scrollY + 1, top: window.scrollY - 1 });
+  };
   return (
     <section className="project" id="projects">
       <Container>
@@ -77,13 +80,19 @@ const Projects = () => {
                 data-aos="fade-up"
               >
                 <Nav.Item>
-                  <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                  <Nav.Link eventKey="first" onClick={littleScroll}>
+                    Tab 1
+                  </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                  <Nav.Link eventKey="second" onClick={littleScroll}>
+                    Tab 2
+                  </Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                  <Nav.Link eventKey="third" onClick={littleScroll}>
+                    Tab 3
+                  </Nav.Link>
                 </Nav.Item>
               </Nav>
 
@@ -100,7 +109,11 @@ const Projects = () => {
                     })}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="second">
+                <Tab.Pane
+                  eventKey="second"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
                   <Row>
                     {projects.map((project, index) => {
                       if (index >= 3)
@@ -108,7 +121,11 @@ const Projects = () => {
                     })}
                   </Row>
                 </Tab.Pane>
-                <Tab.Pane eventKey="third">
+                <Tab.Pane
+                  eventKey="third"
+                  data-aos="fade-up"
+                  data-aos-duration="2000"
+                >
                   <h1 className="empty-tab">
                     Stay tuned for more exciting projects coming soon!
                   </h1>
