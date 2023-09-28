@@ -104,7 +104,7 @@ const NavBar = () => {
                 </a>
               </div>
               <HashLink to="#connect">
-                <button className="lets-connect">
+                <button className="lets-connect nav-btn">
                   <span>Let's Connect</span>
                 </button>
               </HashLink>
