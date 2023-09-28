@@ -27,7 +27,7 @@ const Footer = () => {
           >
             <div className="social-icon">
               <a
-                href="https://twitter.com/MWali1209"
+                href="https://www.linkedin.com/in/md-wali-154461189/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
