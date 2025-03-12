@@ -1,5 +1,9 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
+
+import projImg7 from "../assets/img/img0.1.png";
+import projImg8 from "../assets/img/img0.2.png";
+import projImg9 from "../assets/img/img0.3.png";
 import projImg1 from "../assets/img/AgeCalculator.png";
 import projImg2 from "../assets/img/NewsHomePage.png";
 import projImg3 from "../assets/img/NotificationPage.png";
@@ -13,6 +17,26 @@ import { useEffect } from "react";
 
 const Projects = () => {
   const projects = [
+    {
+      title: "Electronic Shop",
+      description: "FrontEnd Mentor challenge",
+      imgUrl: projImg7,
+      projectURL: "https://wali1209.github.io/landing-page-electronic-shop/",
+    },
+    {
+      title: "Landing Page CG",
+      description: "FrontEnd Mentor challenge",
+      imgUrl: projImg8,
+      projectURL:
+        "https://wali1209.github.io/hiking-concept-girl-landing-page/",
+    },
+    {
+      title: "Recipe Page",
+      description: "FrontEnd Mentor challenge",
+      imgUrl: projImg9,
+      projectURL: "https://github.com/Wali1209/recipe-page-main",
+    },
+
     {
       title: "Age Calculator",
       description: "FrontEnd Mentor challenge",
@@ -104,7 +128,7 @@ const Projects = () => {
                 >
                   <Row>
                     {projects.map((project, index) => {
-                      if (index < 3)
+                      if (index < 6)
                         return <ProjectCard key={index} {...project} />;
                     })}
                   </Row>
@@ -116,7 +140,7 @@ const Projects = () => {
                 >
                   <Row>
                     {projects.map((project, index) => {
-                      if (index >= 3)
+                      if (index >= 6)
                         return <ProjectCard key={index} {...project} />;
                     })}
                   </Row>
